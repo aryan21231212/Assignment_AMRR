@@ -8,7 +8,7 @@ const View = () => {
 
 
   const handleEnquire = async (data)=>{
-    let response = await fetch('http://localhost:3000/enquire',{
+    let response = await fetch('https://assignment-amrr.onrender.com/enquire',{
       method: 'POST',
       headers:{
         'Content-Type':'application/json'
@@ -51,7 +51,7 @@ const View = () => {
 
   useEffect(() => {
     const dataFetch = async () => {
-      let response = await fetch('http://localhost:3000/view');
+      let response = await fetch('https://assignment-amrr.onrender.com/view');
       let data = await response.json()
       setdata(data)
     }

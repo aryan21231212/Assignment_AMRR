@@ -26,7 +26,7 @@ const Add = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/add', {
+      const response = await fetch('https://assignment-amrr.onrender.com/add', {
         method: 'POST',
         body: formData,
       });
