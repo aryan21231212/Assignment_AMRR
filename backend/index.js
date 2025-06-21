@@ -77,7 +77,6 @@ app.post('/enquire',async (req,res)=>{
   try{
     const transporter = nodemailer.createTransport({
       host: 'smtp.ethereal.email',
-      port: 587,
       auth: {
           user: 'cloyd.kirlin75@ethereal.email',
           pass: 'x3ZsKvpHaKABrUBzZH'
